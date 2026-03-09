@@ -1,0 +1,27 @@
+
+SECOM YIELD OPTIMIZATION — CONTINUOUS IMPROVEMENT PLAN
+Generated from Notebook 5 analysis
+
+KEY FINDINGS:
+1. July 2008 yield crisis — process instability at ramp-up
+2. Sensor drift in top 3 sensors (sensor_478, sensor_60, sensor_511)
+3. Model deployment ready at threshold 0.2828
+4. 48% cost reduction vs no-model baseline
+
+TOP SENSOR GUARDBANDS:
+sensor_478: Lower=2.24, Upper=14.74 (separation=0.664)
+sensor_60:  Lower=-11.97, Upper=28.31 (separation=0.640)
+sensor_511: Lower=18.01, Upper=201.44 (separation=0.638)
+
+INTERVENTION POLICY:
+Low Risk    (0.00-0.15): Normal processing
+Medium Risk (0.15-0.28): Enhanced monitoring
+High Risk   (0.28-0.60): Engineering review required
+Critical    (0.60-1.00): Hold wafer immediately
+
+RECOMMENDED ACTIONS:
+1. Implement qualification protocol before production ramp
+2. Deploy real-time guardband monitoring for top 3 sensors
+3. Deploy model at threshold 0.2828 in MES
+4. Retrain model quarterly on new production data
+5. Track recall monthly — alert if drops below 50%

@@ -1,0 +1,18 @@
+# Raw data — too large for GitHub
+data/raw/
+
+# Processed data — regeneratable from notebooks
+data/processed/*.csv
+data/processed/*.png
+
+# Model binaries
+models/*.pkl
+
+# Python artifacts
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# GCP credentials
+*.json
+service_account*.json
